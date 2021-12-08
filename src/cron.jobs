@@ -1,0 +1,1 @@
+*/5 * * * * /bin/python3 /opt/ezddns_cloudflare/ddns-updater.py
