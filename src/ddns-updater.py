@@ -16,6 +16,7 @@ class dns:
 		self.zoneid = ZONE_ID
 	
 	def get_dnsrecords(self) -> None:
+	# Initialize your dns records.
 		dnsrec = requests.get("https://api.cloudflare.com/client/v4/zones/"+ self.zoneid +"/dns_records", headers={
 			"X-Auth-Email" : self.email,
 			"X-Auth-Key" : self.api_token,
@@ -24,6 +25,7 @@ class dns:
 		self.dnsrecords = json.loads(dnsrec.text)
 
 	def print_dnsrecords(self) -> None:
+	# Print your dns records, debug purposes.
 		print("ZONES AVAILABLE")
 		for i in self.dnsrecords["result"]:
 			print("----------------")
@@ -34,7 +36,7 @@ class dns:
 			print("CONTENT: "+ i["content"])
 	
 	def dns_update(self, name: str=config.DOMAIN) -> bool:
-
+		# Update the dns pointed ip.
 		id=""
 		type : str
 		ttl : int
