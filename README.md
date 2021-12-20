@@ -4,7 +4,7 @@
 
 ![](https://img.shields.io/badge/Support-Linux-lightgrey) ![](https://img.shields.io/badge/Python->3.0-green)
 
-This script aims to make the <b>dynamic ip</b> of your local server, <b>public</b>. It does this by regularly updating cloudflare's dns record. Basically, your domain will always be updated every IP change.
+This script aims to make the <b>dynamic ip</b> of your local server, <b>a falsy static one</b>. It does this by regularly updating cloudflare's dns record. Basically, your domain will always be updated every IP change.
 
 ---
 
