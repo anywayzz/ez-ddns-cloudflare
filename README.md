@@ -1,8 +1,8 @@
 # EZ DDNS CLOUDFLARE
 
-![](https://img.shields.io/badge/Support-Linux-lightgrey) ![](https://img.shields.io/badge/Python->3.0-green) 
+![](https://img.shields.io/badge/Support-Linux-lightgrey) ![](https://img.shields.io/badge/Python->3.0-green)
 
- This script aims to make the <b>dynamic ip</b> of your local server, <b>public</b>. It does this by regularly updating cloudflare's dns record. Basically, your domain will always be updated every IP change.
+This script aims to make the <b>dynamic ip</b> of your local server, <b>public</b>. It does this by regularly updating cloudflare's dns record. Basically, your domain will always be updated every IP change.
 
 ---
 
@@ -22,22 +22,23 @@ Clone this repository
 
 ```sh
 git clone https://github.com/anywayzz/ez-ddns-cloudflare
- ``` 
+```
 
-Open ```config.py``` and set
+Open `config.py` and set
 
 ```py
-API_TOKEN = " [ YOUR API TOKEN ] "
-ZONE_ID = 	" [ YOUR ZONE ID ] "
-EMAIL = 	" [ YOUR CLOOUDFLARE EMAIL ] "
-DOMAIN = 	" [ THE DOMAIN TO BE UPDATED ] "
+API_TOKEN = " { YOUR API TOKEN } "
+ZONE_ID = 	" { YOUR ZONE ID } "
+EMAIL = 	" { YOUR CLOOUDFLARE EMAIL } "
+DOMAIN = 	[" { THE DOMAIN/S TO BE UPDATED } "]
 ```
+
 if you don't know your API TOKEN check [here](https://support.cloudflare.com/hc/en-us/articles/200167836-Managing-API-Tokens-and-Keys#12345680).<br>
 if you don't know your ZONE ID check [here](https://community.cloudflare.com/t/where-to-find-zone-id/132913).
 
 Finally start the script:
 
 ```sh
-chmod +x ezddns.sh; 
+chmod +x ezddns.sh;
 ./ezddns.sh
 ```
